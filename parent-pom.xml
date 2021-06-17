@@ -21,8 +21,8 @@
          <apigee.hosturl>https://khrystynakasian-eval-prod.apigee.net/api/v1/mocks</apigee.hosturl>
          <apigee.apiversion>v1</apigee.apiversion>
          <apigee.org>${khrystynakasian-eval}</apigee.org>
-         <apigee.username>${Khrystyna Kasian}</apigee.username>
-         <apigee.password>${Relax2003}</apigee.password>
+         <apigee.username>${username}</apigee.username>
+         <apigee.password>${password}</apigee.password>
          <apigee.options>${options}</apigee.options>
       </properties>
    </profile>
