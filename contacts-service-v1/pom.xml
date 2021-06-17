@@ -1,70 +1,75 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+  http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>mocktarget</artifactId>
+    <groupId>proxy_mockup</groupId>
+    <version>1.0</version>
+    <relativePath>../contacts-service-v1/parent-pom.xml</relativePath>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>proxy_mockup</groupId>
-  <artifactId>apigee-deploy-parent</artifactId>
-  <version>1.1</version>
- <profiles>
-   <profile>
-      <id>test</id> //Deployment environment
-      <properties>
-         <org>khrystynakasian-eval</org>
-         <options>validate</options>
-         <apigee.profile>prod</apigee.profile>
-         <apigee.env>prod</apigee.env>
-         <apigee.hosturl>https://khrystynakasian-eval-prod.apigee.net/api/v1/mocks</apigee.hosturl>
-         <apigee.apiversion>v1</apigee.apiversion>
-         <apigee.org>${khrystynakasian-eval}</apigee.org>
-         <apigee.username>${Khrystyna Kasian}</apigee.username>
-         <apigee.password>${Relax2003}</apigee.password>
-         <apigee.options>${options}</apigee.options>
-      </properties>
-   </profile>
-</profiles>
-<plugins>
-   <plugin>
-      <artifactId>maven-resources-plugin</artifactId>
-      <version>2.6</version>
-      <executions>
-         <execution>
+  <artifactId>mocktarget-v1</artifactId>
+  <version>1.0</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.5</version>
+        <executions>
+          <execution>
+            <id>auto-clean</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <id>copy-resources-step</id>
             <phase>package</phase>
             <goals>
-               <goal>copy-resources</goal>
+              <goal>copy-resources</goal>
             </goals>
             <configuration>
-               <overwrite>true</overwrite>
-               <encoding>UTF-8</encoding>
-               <echo message="basedir parent : ${basedir}" />
-               <outputDirectory>${basedir}/target/apiproxy</outputDirectory>
-               <resources>
-                  <resource>
-                     <directory>apiproxy</directory>
-                  </resource>
-               </resources>
+              <!-- this is important -->
+              <overwrite>true</overwrite>
+              <!-- target -->
+              <outputDirectory>${basedir}/target/apiproxy</outputDirectory>
+              <resources>
+                <resource>
+                  <!-- source -->
+                  <directory>apiproxy</directory>
+                </resource>
+              </resources>
             </configuration>
-         </execution>
-      </executions>
-   </plugin>
-   <plugin>
-      <groupId>io.apigee.build-tools.enterprise4g</groupId>
-      <artifactId>apigee-edge-maven-plugin</artifactId>
-      <version>1.1.5</version>
-      <executions>
-         <execution>
-            <id>configure-bundle</id>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.apigee.build-tools.enterprise4g</groupId>
+        <artifactId>4G-gateway-maven-build-pack</artifactId>
+        <configuration>
+          <skip>false</skip>
+          <!-- Use this module level config to skip module build. Make it true -->
+        </configuration>
+        <executions>
+          <execution>
+            <id>configure-bundle-step</id>
             <phase>package</phase>
             <goals>
-               <goal>configure</goal>
+              <goal>configure</goal>
             </goals>
-         </execution>
-         <execution>
-            <id>deploy-bundle</id>
-            <phase>install</phase>
-            <goals>
-               <goal>deploy</goal>
-            </goals>
-         </execution>
-      </executions>
-   </plugin>
-</plugins>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
