@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="mocktarget-v1">
+    <Basepaths>/api/v1/mocks</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1623846805128</CreatedAt>
+    <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>mocktarget-v1</DisplayName>
+    <LastModifiedAt>1623846805128</LastModifiedAt>
+    <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:04b6c0de445f5e44295d1f774db66b78e9067fc3b2533612203dc316ac5274f6f9ffa2c212dd7c979aa05668266e31862bb8b7ae57405b041116d792ec32a762:eu-west-1</ManifestVersion>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
