@@ -87,11 +87,11 @@
       <properties>
         <apigee.profile>test</apigee.profile>
         <apigee.env>test</apigee.env>
-        <apigee.hosturl>https://khrystynakasian-eval-test.apigee.net/api/v1/mocks</apigee.hosturl>
+        <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
         <apigee.apiversion>v1</apigee.apiversion>
         <apigee.org>khrystynakasian-eval</apigee.org>
-        <apigee.username>${username}</apigee.username>
-        <apigee.password>${password}</apigee.password>
+        <apigee.username>khrystyna.kasian@gmail.com</apigee.username>
+        <apigee.password>Relax2003^</apigee.password>
         <apigee.options>override</apigee.options>
         <apigee.override.delay>10</apigee.override.delay>
       </properties>
@@ -101,11 +101,11 @@
       <properties>
         <apigee.profile>prod</apigee.profile>
         <apigee.env>prod</apigee.env>
-        <apigee.hosturl>https://khrystynakasian-eval-prod.apigee.net/api/v1/mocks</apigee.hosturl>
+        <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
         <apigee.apiversion>v1</apigee.apiversion>
         <apigee.org>khrystynakasian-eval</apigee.org>
-        <apigee.username>${username}</apigee.username>
-        <apigee.password>${password}</apigee.password>
+        <apigee.username>khrystyna.kasian@gmail.com</apigee.username>
+        <apigee.password>Relax2003^</apigee.password>
         <apigee.options>override</apigee.options>
         <apigee.override.delay>10</apigee.override.delay>
       </properties>
