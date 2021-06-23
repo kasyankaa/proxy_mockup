@@ -1,1 +1,9 @@
-contacts-service-v1\apiproxy\manifests\
+contacts-service-v1/apiproxy/manifests/
+contacts-service-v1/target/*
+
+
+
+
+
+
+
