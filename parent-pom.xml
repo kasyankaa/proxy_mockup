@@ -90,8 +90,8 @@
         <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
         <apigee.apiversion>v1</apigee.apiversion>
         <apigee.org>khrystynakasian-eval</apigee.org>
-        <apigee.username>rjngktjk</apigee.username>
-        <apigee.password>rjgjt</apigee.password>
+          <apigee.username>${username}</apigee.username>
+         <apigee.password>${password}</apigee.password>
         <apigee.options>override</apigee.options>
         <apigee.override.delay>10</apigee.override.delay>
       </properties>
@@ -104,8 +104,8 @@
         <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
         <apigee.apiversion>v1</apigee.apiversion>
         <apigee.org>khrystynakasian-eval</apigee.org>
-        <apigee.username>rfbjhgi</apigee.username>
-        <apigee.password>hrbjc rcreh</apigee.password>
+          <apigee.username>${username}</apigee.username>
+         <apigee.password>${password}</apigee.password>
         <apigee.options>override</apigee.options>
         <apigee.override.delay>10</apigee.override.delay>
       </properties>
