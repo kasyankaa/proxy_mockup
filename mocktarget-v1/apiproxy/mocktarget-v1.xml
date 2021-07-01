@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <APIProxy revision="1" name="mocktarget-v1">
-    <Basepaths>/api/v1/mocks</Basepaths>
+    <Basepaths>@basepath_prefix@/api/v1/mocks</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1623846805128</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
