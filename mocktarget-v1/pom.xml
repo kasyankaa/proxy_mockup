@@ -13,4 +13,6 @@
   <groupId>proxy_mockup</groupId>
   <artifactId>mocktarget-v1</artifactId>
   <version>1.0</version>
+  <name>${name_prefix}mocktarget-v1</name>
+  <packaging>pom</packaging>
 </project>
