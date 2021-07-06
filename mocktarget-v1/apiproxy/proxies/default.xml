@@ -4,7 +4,6 @@
     <Request/>
     <Response/>
   </PreFlow>
-  <Flows/>
   <PostFlow name="PostFlow">
     <Request/>
     <Response/>
