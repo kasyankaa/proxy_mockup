@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BasicAuthentication async="false" continueOnError="false" enabled="true" name="Basic-Authentication">
+    <DisplayName>Basic Authentication</DisplayName>
+    <Operation>Decode</Operation>
+    <User ref="BasicAuth.credentials.username" />
+ <Password ref="BasicAuth.credentials.password" />
+    <Source>request.header.Authorization</Source>
+</BasicAuthentication>
