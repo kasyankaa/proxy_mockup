@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RF-Username">
+  <DisplayName>Raise Fault 1</DisplayName>
+  <FaultResponse>
+    <Set>
+      <Payload contentType="application/json">
+        {"success":"false"}
+      </Payload>
+      <StatusCode>404</StatusCode>
+    </Set>
+  </FaultResponse>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

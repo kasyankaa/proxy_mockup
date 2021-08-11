@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
   <PreFlow name="PreFlow">
-    <Request/>
-    <Response/>
+    <Request>
+           <Step>
+               <Name>Basic-Authentication</Name>
+           </Step>
+           <Step>
+            <Name>SC-Users</Name>
+          </Step>
+          <Step>
+           <Name>RF-Username</Name>
+          <Condition>(response.status.code = 404)</Condition>
+        </Step>
+       </Request>
+     <Response/>
   </PreFlow>
   <PostFlow name="PostFlow">
     <Request/>
     <Response/>
   </PostFlow>
   <HTTPProxyConnection>
-    <BasePath>@basepath_prefix@/api/v1/mocks</BasePath>
+    <BasePath>/api/v1/mocks</BasePath>
     <VirtualHost>secure</VirtualHost>
   </HTTPProxyConnection>
   <RouteRule name="default">

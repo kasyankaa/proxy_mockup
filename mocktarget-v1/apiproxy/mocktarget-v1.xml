@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="1" name="${name_prefix}mocktarget-v1">
-    <Basepaths>@basepath_prefix@/api/v1/mocks</Basepaths>
+<APIProxy revision="123" name="mocktarget-v1">
+    <Basepaths>/api/v1/mocks</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1623846805128</CreatedAt>
+    <CreatedAt>1627647743968</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
     <Description></Description>
     <DisplayName>mocktarget-v1</DisplayName>
-    <LastModifiedAt>1623846805128</LastModifiedAt>
+    <LastModifiedAt>1627647743968</LastModifiedAt>
     <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:04b6c0de445f5e44295d1f774db66b78e9067fc3b2533612203dc316ac5274f6f9ffa2c212dd7c979aa05668266e31862bb8b7ae57405b041116d792ec32a762:eu-west-1</ManifestVersion>
-    <Policies/>
+    <ManifestVersion>SHA-512:6515b085b9e4d402349802c419b26ba85da61948c5fd059db18474c15b15c35376fb3dd2e080651aec1378112025829c687b9e0c99770fcd3db2d05d598d1279:eu-west-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-Auth</Policy>
+        <Policy>AM-Echo</Policy>
+        <Policy>AM-Help</Policy>
+        <Policy>AM-Ip</Policy>
+        <Policy>AM-Json</Policy>
+        <Policy>AM-Love</Policy>
+        <Policy>AM-Status</Policy>
+        <Policy>AM-User</Policy>
+        <Policy>AM-Xml</Policy>
+        <Policy>Basic-Authentication</Policy>
+    </Policies>
     <ProxyEndpoints>
         <ProxyEndpoint>default</ProxyEndpoint>
     </ProxyEndpoints>

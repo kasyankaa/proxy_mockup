@@ -96,6 +96,5 @@
       <Server name="apigee-mocktarget"/>
   </LoadBalancer>
   <Path>{target-path}</Path>
-
   </HTTPTargetConnection>
 </TargetEndpoint>
