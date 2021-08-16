@@ -2,18 +2,21 @@
 <ProxyEndpoint name="default">
   <PreFlow name="PreFlow">
     <Request>
-           <Step>
-               <Name>Basic-Authentication</Name>
-           </Step>
-           <Step>
-            <Name>SC-Users</Name>
-          </Step>
-          <Step>
-           <Name>RF-Username</Name>
-          <Condition>(response.status.code = 404)</Condition>
-        </Step>
-       </Request>
-     <Response/>
+      <Step>
+        <Name>Basic-Authentication</Name>
+      </Step>
+      <Step>
+        <Name>Verify-Api-Key</Name>
+      </Step>
+      <Step>
+        <Name>SC-Users</Name>
+      </Step>
+      <Step>
+        <Name>RF-Username</Name>
+        <Condition>(response.status.code = 404)</Condition>
+      </Step>
+    </Request>
+    <Response/>
   </PreFlow>
   <PostFlow name="PostFlow">
     <Request/>

@@ -3,7 +3,7 @@
   <Request>
     <Set>
       <Verb>GET</Verb>
-      <Path>/{credentials.username}</Path>
+      <Path>/{request.queryparam.username}</Path>
     </Set>
     <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
   </Request>
