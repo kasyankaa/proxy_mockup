@@ -1,0 +1,112 @@
+openapi: 3.0.0
+info:
+  description: OpenAPI Specification for the Apigee mock target service endpoint.
+  version: 1.0.0
+  title: Mock Target API
+paths:
+  /echo:
+    get:
+      operationId: Get echo
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+    post:
+      operationId: post info
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        '201':
+          description: Created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+  /statuscode/{code}:
+    get:
+      operationId: Get statuscode
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /help:
+    get:
+      operationId: Get help
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /user:
+    get:
+      operationId: Get user
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /ip:
+    get:
+      operationId: Get ip
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /auth:
+    get:
+      operationId: Get auth
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /json:
+    get:
+      operationId: Get json
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /xml:
+    get:
+      operationId: Get xml
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+  /iloveapis:
+    get:
+      operationId: Get ailoveapis
+      parameters:
+        - name: apikey
+          in: header
+          required: true
+      responses:
+        "200":
+          description: Success
+
+...

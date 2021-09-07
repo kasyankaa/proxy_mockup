@@ -1,0 +1,11 @@
+<AssignMessage name="AM-Post-Echo">
+  <AssignVariable>
+    <Name>target.copy.pathsuffix</Name>
+    <Value>false</Value>
+  </AssignVariable>
+  <AssignVariable>
+    <Name>target-path</Name>
+    <Value>/echo</Value>
+  </AssignVariable>
+  <Payload contentType="application/json"/>
+</AssignMessage>

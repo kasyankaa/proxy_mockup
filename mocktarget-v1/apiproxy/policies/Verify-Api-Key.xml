@@ -1,4 +1,0 @@
-<VerifyAPIKey async="false" continueOnError="false" enabled="true" name="Verify-Api-Key">
-    <DisplayName>Custom label used in UI</DisplayName>
-        <APIKey ref="credentials.apikey"/>
-</VerifyAPIKey>

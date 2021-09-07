@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <condition else="" property="basepath_prefix" value="/">
+      <not>
+        <equals arg2="" trim="true" arg1="" />
+      </not>
+    </condition>
+    <condition else="" property="name_prefix" value="-">
+      <not>
+        <equals arg2="" trim="true" arg1="" />
+      </not>
+    </condition>
+    <echo message="prefix: " />
+    <echo message="basepath_prefix: ${basepath_prefix}" />
+    <echo message="name_prefix: ${name_prefix}" />
+  </target>
+</project>
