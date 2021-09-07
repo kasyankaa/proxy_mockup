@@ -1,7 +1,0 @@
-<OASValidation name="OAS-Validation">
-  <OASResource>oas://mocktarget-v1.yaml</OASResource>
-   <Options>
-      <ValidateMessageBody>true</ValidateMessageBody>
-   </Options>
-   <Source>request</Source>
-</OASValidation>

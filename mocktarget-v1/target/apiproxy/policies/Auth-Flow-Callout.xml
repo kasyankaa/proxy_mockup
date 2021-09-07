@@ -1,8 +1,0 @@
-<FlowCallout async="false" continueOnError="false" enabled="true" name="Auth-Flow-Callout">
-  <DisplayName>Auth Flow Callout</DisplayName>
-  <Parameters>
-    <Parameter name="variable_containing_api_key" ref='request.header.apikey'/>
-    <Parameter name="variable_containing_access_token" ref='request.header.Authorization'/>
-  </Parameters>
-  <SharedFlowBundle>security-sf-v1</SharedFlowBundle>
-</FlowCallout>
