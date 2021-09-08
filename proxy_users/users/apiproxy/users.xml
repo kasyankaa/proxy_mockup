@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="users">
+    <Basepaths>@basepath_prefix@/api/v1/users</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1625737261925</CreatedAt>
+    <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
+    <Description>Two target endpoints - creating and reading user by username</Description>
+    <DisplayName>users</DisplayName>
+    <LastModifiedAt>1625737261925</LastModifiedAt>
+    <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:8417ba036e705702686bd7ca526bbd14db6ae18f87cf5936d34a5d4212ff5a83c0c1aed370e7c8817f65cfa9d914225d82b3ea0fa6829c2d11c71b5972c1aa5d:eu-west-1</ManifestVersion>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

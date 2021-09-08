@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <Flows>
+    <Flow name="Help">
+      <Request>
+        <Step>
+          <Name>AM-Help</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/help") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="User">
+      <Request>
+        <Step>
+          <Name>AM-User</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/user") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Love">
+      <Request>
+        <Step>
+          <Name>AM-Love</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/iloveapis") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Ip">
+      <Request>
+        <Step>
+          <Name>AM-Ip</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/ip") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Xml">
+      <Request>
+        <Step>
+          <Name>AM-Xml</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/xml") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Json">
+      <Request>
+        <Step>
+          <Name>AM-Json</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/json") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Echo">
+      <Request>
+        <Step>
+          <Name>AM-Echo</Name>
+        </Step>
+      </Request>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/echo") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Auth">
+      <Request>
+      <Step>
+         <Name>AM-Auth</Name>
+      </Step>
+    </Request>
+      <Response/>
+        <Condition>(proxy.pathsuffix MatchesPath "/auth") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Status">
+      <Request>
+      <Step>
+         <Name>AM-Status</Name>
+      </Step>
+    </Request>
+      <Response/>
+        <Condition>(proxy.pathsuffix MatchesPath "/statuscode/{code}") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="Post Echo">
+      <Request>
+      <Step>
+         <Name>AM-Post-Echo</Name>
+      </Step>
+    </Request>
+      <Response/>
+        <Condition>(proxy.pathsuffix MatchesPath "/echo") and (request.verb = "POST")</Condition>
+    </Flow>
+  </Flows>
+  <HTTPTargetConnection>
+    <LoadBalancer>
+      <Server name="apigee-mocktarget"/>
+  </LoadBalancer>
+  <Path>{target-path}</Path>
+  </HTTPTargetConnection>
+</TargetEndpoint>

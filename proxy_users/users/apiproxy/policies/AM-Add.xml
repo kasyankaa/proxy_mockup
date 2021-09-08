@@ -1,0 +1,11 @@
+<AssignMessage continueOnError="false" enabled="true" name="AM-Add">
+  <Set>
+    <Payload contentType="application/json">
+      {"success":"true"}
+    </Payload>
+    <StatusCode>201</StatusCode>
+    <ReasonPhrase>Created</ReasonPhrase>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

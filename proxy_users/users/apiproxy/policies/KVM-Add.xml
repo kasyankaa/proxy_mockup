@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-Add" mapIdentifier="users">
+    <DisplayName>Adding</DisplayName>
+    <Properties/>
+    <Put override="true">
+        <Key>
+            <Parameter ref="name"/>
+        </Key>
+
+        <Value ref="username"/>
+    </Put>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

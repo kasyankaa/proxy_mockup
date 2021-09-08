@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables name="EV-Params">
+  <Source>request</Source>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="name">
+            <JSONPath>$.name</JSONPath>
+        </Variable>
+        <Variable name="username">
+            <JSONPath>$.username</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <URIPath>
+      <Pattern ignoreCase="true">/{path.username}</Pattern>
+  </URIPath>
+</ExtractVariables>

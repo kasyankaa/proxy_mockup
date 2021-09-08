@@ -1,0 +1,9 @@
+<KeyValueMapOperations mapIdentifier="users" async="false" continueOnError="false" enabled="true" name="KVM-Usernames">
+  <DisplayName>GetKVM</DisplayName>
+  <Properties/>
+  <Get assignTo="username">
+    <Key>
+      <Parameter ref="path.username"/>
+    </Key>
+  </Get>
+</KeyValueMapOperations>
