@@ -1,0 +1,9 @@
+<AssignMessage continueOnError="false" enabled="true" name="AM-Username">
+  <Set>
+    <Payload contentType="application/json">
+      {"username":"{username}"}
+    </Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>
