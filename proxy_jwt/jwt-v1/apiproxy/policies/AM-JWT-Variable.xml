@@ -1,0 +1,9 @@
+<AssignMessage continueOnError="false" enabled="true" name="AM-JWT-Variable">
+  <Add>
+    <Headers>
+      <Header name="jwt-token">{jwt-variable}</Header>
+    </Headers>
+  </Add>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>
