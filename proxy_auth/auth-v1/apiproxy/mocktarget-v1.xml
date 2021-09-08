@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="123" name="auth-v1">
+    <Basepaths>/api/v1/auth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1627647743968</CreatedAt>
+    <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>auth-v1</DisplayName>
+    <LastModifiedAt>1627647743968</LastModifiedAt>
+    <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:6515b085b9e4d402349802c419b26ba85da61948c5fd059db18474c15b15c35376fb3dd2e080651aec1378112025829c687b9e0c99770fcd3db2d05d598d1279:eu-west-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-Help</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

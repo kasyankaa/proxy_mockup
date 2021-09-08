@@ -1,0 +1,17 @@
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-Username">
+  <DisplayName>SC-Users</DisplayName>
+  <Request>
+    <Set>
+      <Verb>GET</Verb>
+      <Path>/{request.formparam.username}</Path>
+    </Set>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  </Request>
+  <Response>callout.response</Response>
+  <HTTPTargetConnection>
+          <Properties>
+              <Property name="success.codes">2xx, 4xx, 5xx</Property>
+          </Properties>
+          <URL>https://khrystynakasian-eval-prod.apigee.net/api/v1/users</URL>
+      </HTTPTargetConnection>
+</ServiceCallout>

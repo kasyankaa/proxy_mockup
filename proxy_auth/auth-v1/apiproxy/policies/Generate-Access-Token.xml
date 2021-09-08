@@ -1,0 +1,12 @@
+<OAuthV2 name="Generate-Access-Token">
+  <Operation>GenerateAccessToken</Operation>
+  <ExternalAuthorization>false</ExternalAuthorization>
+  <SupportedGrantTypes>
+      <GrantType>client_credentials</GrantType>
+    <GrantType>password</GrantType>
+  </SupportedGrantTypes>
+  <Username>username</Username>
+  <Password>password</Password>
+  <GenerateResponse enabled="true"/>
+  <Tokens/>
+</OAuthV2>

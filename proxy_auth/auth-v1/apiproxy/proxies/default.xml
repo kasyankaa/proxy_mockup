@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <Flows>
+    <Flow name="AuthorizationCodeRequest">
+      <Request>
+      <Step>
+      <FaultRules/>
+      <Name>SC-Username</Name>
+      <Condition>(request.formparam.grant_type="password")</Condition>
+    </Step>
+    <Step>
+        <Name>RF-Username</Name>
+        <Condition>(callout.response.status.code = 404)</Condition>
+      </Step>
+    <Step>
+      <FaultRules/>
+      <Name>Generate-Access-Token</Name>
+    </Step>
+  </Request>
+  <Response/>
+  <Condition>(proxy.pathsuffix MatchesPath "/token") and (request.verb = "POST")</Condition>
+</Flow>
+</Flows>
+<HTTPProxyConnection>
+  <BasePath>/api/v1/auth</BasePath>
+  <VirtualHost>secure</VirtualHost>
+</HTTPProxyConnection>
+<RouteRule name="noroute"/>
+</ProxyEndpoint>
