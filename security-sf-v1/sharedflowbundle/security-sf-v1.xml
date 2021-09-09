@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="9" name="security-sf-v1">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1631164623102</CreatedAt>
+    <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>security-sf-v1</DisplayName>
+    <LastModifiedAt>1631164623102</LastModifiedAt>
+    <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:6e13a8507abeed008e7477f05a3aace669638a91c9855a2b8de2189c924875017e9ef3ad97539c859a633d664f8f5298d8e0a536660287feaf6564960dbba9f6:eu-west-1</ManifestVersion>
+    <Policies>
+        <Policy>Quota</Policy>
+        <Policy>RF-Verify-Keys</Policy>
+        <Policy>Spike-Arrest</Policy>
+        <Policy>Verify-Access-Token</Policy>
+        <Policy>Verify-Api-Key</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>
