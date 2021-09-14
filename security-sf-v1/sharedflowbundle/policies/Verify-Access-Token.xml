@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="Verify-Access-Token">
+    <DisplayName>Verify-Access-Token</DisplayName>
+    <ExternalAuthorization>false</ExternalAuthorization>
+    <Operation>VerifyAccessToken</Operation>
+    <GenerateResponse enabled="true"/>
+    <Tokens>
+        <Token type="accesstoken" cascade="false">variable_containing_access_token</Token>
+    </Tokens>
+</OAuthV2>

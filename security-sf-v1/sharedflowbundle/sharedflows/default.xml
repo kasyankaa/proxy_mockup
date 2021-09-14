@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>Spike-Arrest</Name>
+    </Step>
+    <Step>
+        <Name>Access-Control</Name>
+    </Step>
+    <Step>
+        <Name>Verify-Api-Key</Name>
+    </Step>
+    <Step>
+        <Name>Verify-Access-Token</Name>
+    </Step>
+    <Step>
+        <Condition>(verifyapikey.Verify-Api-Key.client_id != apigee.client_id)</Condition>
+        <Name>RF-Verify-Keys</Name>
+    </Step>
+    <Step>
+        <Name>Quota</Name>
+    </Step>
+</SharedFlow>
