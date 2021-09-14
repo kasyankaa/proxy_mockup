@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SharedFlowBundle revision="9" name="security-sf-v1">
+<SharedFlowBundle revision="12" name="security-sf-v1">
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1631164623102</CreatedAt>
+    <CreatedAt>1631605973674</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
     <Description>undefined</Description>
     <DisplayName>security-sf-v1</DisplayName>
-    <LastModifiedAt>1631164623102</LastModifiedAt>
+    <LastModifiedAt>1631605973674</LastModifiedAt>
     <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:6e13a8507abeed008e7477f05a3aace669638a91c9855a2b8de2189c924875017e9ef3ad97539c859a633d664f8f5298d8e0a536660287feaf6564960dbba9f6:eu-west-1</ManifestVersion>
+    <ManifestVersion>SHA-512:2a44f5aeb29ce31aff546151bfa56943bbf90db60319d4d8a4363392539cd5ee601d232632bcd907ff679b1e578d01c567217fe53da93fb0de7b778ee17aee4a:eu-west-1</ManifestVersion>
     <Policies>
+        <Policy>Access-Control</Policy>
         <Policy>Quota</Policy>
         <Policy>RF-Verify-Keys</Policy>
         <Policy>Spike-Arrest</Policy>

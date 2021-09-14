@@ -4,6 +4,9 @@
         <Name>Spike-Arrest</Name>
     </Step>
     <Step>
+        <Name>Access-Control</Name>
+    </Step>
+    <Step>
         <Name>Verify-Api-Key</Name>
     </Step>
     <Step>
