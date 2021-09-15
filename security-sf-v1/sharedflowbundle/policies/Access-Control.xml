@@ -2,7 +2,7 @@
 <AccessControl name="Access-Control">
     <IPRules noRuleMatchAction="ALLOW">
         <MatchRule action="DENY">
-            <SourceAddress mask="24">54.86.50.139</SourceAddress>
+            <SourceAddress mask="{mask}">{ip}</SourceAddress>
         </MatchRule>
     </IPRules>
 </AccessControl>
