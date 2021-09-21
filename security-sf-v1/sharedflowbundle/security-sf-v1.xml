@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SharedFlowBundle revision="25" name="security-sf-v1">
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1632215762817</CreatedAt>
+    <CreatedAt>1630306391811</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
     <Description>undefined</Description>
     <DisplayName>security-sf-v1</DisplayName>
-    <LastModifiedAt>1632215762817</LastModifiedAt>
+    <LastModifiedAt>1632218112065</LastModifiedAt>
     <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:4ab769c765a84b3e0e7081ec1e9cbdcd58635678f274b95d8fb23f0ec6ad8c8b4db052c6b5165e033190ebaa9d6a6abef5a7bf203995e7f62fd2ea9315b69a24:eu-west-1</ManifestVersion>
+    <ManifestVersion>SHA-512:7dfbbdbf56bd967f0efc636dd4853b40ea099ea83d204126280d6bd75d784a53d25cf00ba8f86a5329c23b33846fb327dcbc5708f5a0ed183ffeb679af614486:eu-west-1</ManifestVersion>
     <Policies>
         <Policy>EV-AppRatelimitingVariables</Policy>
         <Policy>JS-VerifyIPAddress</Policy>

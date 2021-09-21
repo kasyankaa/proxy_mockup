@@ -7,7 +7,7 @@
         <Name>JS-VerifyIPAddress</Name>
     </Step>
     <Step>
-        <Condition>triggerError equals "true"</Condition>
+        <Condition>javascript.JS-VerifyIPAddress.failed equals "true"</Condition>
         <Name>RF-DeniedIPAddress</Name>
     </Step>
     <Step>
@@ -26,7 +26,7 @@
         <Name>OAV2-VerifyAccessToken</Name>
     </Step>
     <Step>
-        <Condition>(verifyapikey.Verify-Api-Key.client_id != apigee.client_id)</Condition>
+        <Condition>(verifyapikey.VAK-VerifyApiKey.client_id != apigee.client_id)</Condition>
         <Name>RF-StolenKey</Name>
     </Step>
 </SharedFlow>
