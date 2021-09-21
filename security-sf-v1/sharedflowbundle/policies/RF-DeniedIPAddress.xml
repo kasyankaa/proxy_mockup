@@ -8,7 +8,7 @@
             <Payload contentType="application/json">
          {"Denied access"}
      </Payload>
-            <StatusCode>500</StatusCode>
+            <StatusCode>403</StatusCode>
             <ReasonPhrase>Denied access</ReasonPhrase>
         </Set>
     </FaultResponse>
