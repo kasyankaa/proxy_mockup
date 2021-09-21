@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-AppRatelimitingVariables">
+    <DisplayName>EV-AppRatelimitingVariables</DisplayName>
+    <Variable name="verifyapikey.Verify-Api-Key.ratelimiting">
+        <Pattern>interval: {app.quota_interval}, spike: {app.spike_arrest}, timeunit: {app.quota_timeunit}, allow: {app.quota_allow}</Pattern>
+    </Variable>
+</ExtractVariables>

@@ -2,7 +2,7 @@
 <Quota async="false" continueOnError="false" enabled="true" name="Quota">
     <DisplayName>Quota</DisplayName>
     <Properties/>
-    <Allow count="9" countRef="verifyapikey.Verify-Api-Key.limit"/>
-    <Interval ref="verifyapikey.Verify-Api-Key.interval">12</Interval>
-    <TimeUnit ref="verifyapikey.Verify-Api-Key.timeunit">hour</TimeUnit>
+    <Allow count="9" countRef="app.quota_allow"/>
+    <Interval ref="app.quota_interval">12</Interval>
+    <TimeUnit ref="app.quota_timeunit">hour</TimeUnit>
 </Quota>

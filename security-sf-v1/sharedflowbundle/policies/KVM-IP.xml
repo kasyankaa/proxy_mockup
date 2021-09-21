@@ -3,11 +3,6 @@
     <DisplayName>KVM-IP</DisplayName>
     <Scope>environment</Scope>
     <ExpiryTimeInSecs>15</ExpiryTimeInSecs>
-    <Get assignTo="mask">
-        <Key>
-            <Parameter>mask</Parameter>
-        </Key>
-    </Get>
     <Get assignTo="ip">
         <Key>
             <Parameter>ip</Parameter>

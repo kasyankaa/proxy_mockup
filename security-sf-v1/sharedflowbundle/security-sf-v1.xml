@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SharedFlowBundle revision="20" name="security-sf-v1">
+<SharedFlowBundle revision="24" name="security-sf-v1">
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1630306391811</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
     <Description>undefined</Description>
     <DisplayName>security-sf-v1</DisplayName>
-    <LastModifiedAt>1631698143741</LastModifiedAt>
+    <LastModifiedAt>1632211682622</LastModifiedAt>
     <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:ff3dd0f8ea18e65559d46e1226b652c81469bf72fb9c27634e1b1a5f7b2820f80cde6f35672011ca0772895cee0c4863cab85f6223c50120d949ed9c73f7456e:eu-west-1</ManifestVersion>
+    <ManifestVersion>SHA-512:e3549c7d1bb12c503e5063c17ab23e103c7c3c5a110bb502b751e7b33dcb89013aa8fc662156c278dc31a329ae916d7263a7d774f837f827c8398599955bd384:eu-west-1</ManifestVersion>
     <Policies>
-        <Policy>Access-Control</Policy>
+        <Policy>EV-AppRatelimitingVariables</Policy>
+        <Policy>JavaScript-1</Policy>
         <Policy>KVM-IP</Policy>
         <Policy>Quota</Policy>
+        <Policy>RF-JS</Policy>
         <Policy>RF-Verify-Keys</Policy>
         <Policy>Spike-Arrest</Policy>
         <Policy>Verify-Access-Token</Policy>
         <Policy>Verify-Api-Key</Policy>
     </Policies>
-    <Resources/>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
     <Spec></Spec>
     <subType>SharedFlow</subType>
     <SharedFlows>
