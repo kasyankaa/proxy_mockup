@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <SharedFlow name="default">
     <Step>
-        <Name>KVM-IP</Name>
+        <Name>KVM0-GetIPAddress</Name>
     </Step>
     <Step>
-        <Name>JavaScript-1</Name>
+        <Name>JS-VerifyIPAddress</Name>
     </Step>
     <Step>
         <Condition>triggerError equals "true"</Condition>
-        <Name>RF-JS</Name>
+        <Name>RF-DeniedIPAddress</Name>
     </Step>
     <Step>
-        <Name>Verify-Api-Key</Name>
+        <Name>VAK-VerifyApiKey</Name>
     </Step>
     <Step>
         <Name>EV-AppRatelimitingVariables</Name>
     </Step>
     <Step>
-        <Name>Spike-Arrest</Name>
+        <Name>SA-30ps</Name>
     </Step>
     <Step>
-        <Name>Quota</Name>
+        <Name>Q-5ps</Name>
     </Step>
     <Step>
-        <Name>Verify-Access-Token</Name>
+        <Name>OAV2-VerifyAccessToken</Name>
     </Step>
     <Step>
         <Condition>(verifyapikey.Verify-Api-Key.client_id != apigee.client_id)</Condition>
-        <Name>RF-Verify-Keys</Name>
+        <Name>RF-StolenKey</Name>
     </Step>
 </SharedFlow>

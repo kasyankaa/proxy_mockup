@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM-IP" mapIdentifier="denial">
-    <DisplayName>KVM-IP</DisplayName>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVM0-GetIPAddress" mapIdentifier="denial">
+    <DisplayName>KVM0-GetIPAddress</DisplayName>
     <Scope>environment</Scope>
     <ExpiryTimeInSecs>15</ExpiryTimeInSecs>
     <Get assignTo="ip">

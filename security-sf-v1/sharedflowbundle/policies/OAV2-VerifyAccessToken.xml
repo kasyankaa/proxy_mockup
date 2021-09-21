@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OAuthV2 async="false" continueOnError="false" enabled="true" name="Verify-Access-Token">
-    <DisplayName>Verify-Access-Token</DisplayName>
+<OAuthV2 async="false" continueOnError="false" enabled="true" name="OAV2-VerifyAccessToken">
+    <DisplayName>OAV2-VerifyAccessToken</DisplayName>
     <ExternalAuthorization>false</ExternalAuthorization>
     <Operation>VerifyAccessToken</Operation>
     <GenerateResponse enabled="true"/>

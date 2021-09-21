@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SharedFlowBundle revision="24" name="security-sf-v1">
+<SharedFlowBundle revision="25" name="security-sf-v1">
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1630306391811</CreatedAt>
+    <CreatedAt>1632215762817</CreatedAt>
     <CreatedBy>khrystyna.kasian@gmail.com</CreatedBy>
     <Description>undefined</Description>
     <DisplayName>security-sf-v1</DisplayName>
-    <LastModifiedAt>1632211682622</LastModifiedAt>
+    <LastModifiedAt>1632215762817</LastModifiedAt>
     <LastModifiedBy>khrystyna.kasian@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:e3549c7d1bb12c503e5063c17ab23e103c7c3c5a110bb502b751e7b33dcb89013aa8fc662156c278dc31a329ae916d7263a7d774f837f827c8398599955bd384:eu-west-1</ManifestVersion>
+    <ManifestVersion>SHA-512:4ab769c765a84b3e0e7081ec1e9cbdcd58635678f274b95d8fb23f0ec6ad8c8b4db052c6b5165e033190ebaa9d6a6abef5a7bf203995e7f62fd2ea9315b69a24:eu-west-1</ManifestVersion>
     <Policies>
         <Policy>EV-AppRatelimitingVariables</Policy>
-        <Policy>JavaScript-1</Policy>
-        <Policy>KVM-IP</Policy>
-        <Policy>Quota</Policy>
-        <Policy>RF-JS</Policy>
-        <Policy>RF-Verify-Keys</Policy>
-        <Policy>Spike-Arrest</Policy>
-        <Policy>Verify-Access-Token</Policy>
-        <Policy>Verify-Api-Key</Policy>
+        <Policy>JS-VerifyIPAddress</Policy>
+        <Policy>KVM0-GetIPAddress</Policy>
+        <Policy>OAV2-VerifyAccessToken</Policy>
+        <Policy>Q-5ps</Policy>
+        <Policy>RF-DeniedIPAddress</Policy>
+        <Policy>RF-StolenKey</Policy>
+        <Policy>SA-30ps</Policy>
+        <Policy>VAK-VerifyApiKey</Policy>
     </Policies>
     <Resources>
         <Resource>jsc://JavaScript-1.js</Resource>
