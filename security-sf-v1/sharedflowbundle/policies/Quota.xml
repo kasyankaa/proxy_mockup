@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Quota async="false" continueOnError="false" enabled="true" name="Quota">
-    <DisplayName>Quota</DisplayName>
-    <Properties/>
-    <Allow count="9" countRef="verifyapikey.Verify-Api-Key.limit"/>
-    <Interval ref="verifyapikey.Verify-Api-Key.interval">12</Interval>
-    <TimeUnit ref="verifyapikey.Verify-Api-Key.timeunit">hour</TimeUnit>
-</Quota>

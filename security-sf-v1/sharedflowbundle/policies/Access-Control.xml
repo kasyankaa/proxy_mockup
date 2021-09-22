@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AccessControl name="Access-Control">
-    <IPRules noRuleMatchAction="ALLOW">
-        <MatchRule action="DENY">
-            <SourceAddress mask="24">54.86.50.139</SourceAddress>
-        </MatchRule>
-    </IPRules>
-</AccessControl>
